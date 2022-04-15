@@ -48,3 +48,8 @@ DF$Title <- replace(DF$Title,DF$Title=="Mayor-President","Mayor")
 
 #viewing and counting for the changed dataframe
 View(count(DF,DF$Title))+
+
+#save and export the changed excel file
+install.packages("writexl")
+library("writexl")
+write_xlsx(DF,"C:\\Users\\Massiel\\Downloads\\DF.xlsx")
